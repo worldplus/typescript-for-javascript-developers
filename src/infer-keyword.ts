@@ -10,4 +10,6 @@ type ReturnTypeFromAdd = ReturnType<typeof add>;
 
 type MyReturnType<T extends (...args: any) => any> = T extends (
     ...args: any
-) => infer R ? R : any;
+) => infer R 
+    ? R 
+    : any;
